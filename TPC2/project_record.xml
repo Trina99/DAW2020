@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project_record SYSTEM "project_record.dtd">
+<?xml-stylesheet type="text/css" href="project_record.css"?>
+<?xml-stylesheet type="text/xsl" href="project_record.xsl"?>
+<project_record>
+    <meta_data>
+        <key_name>PR_Trina_2020</key_name>
+        <title>Schema para tratamento de dados em XML</title>
+        <subtitle>TPC2 de DAW</subtitle>
+        <begin_date>21 de Outubro de 2020</begin_date>
+        <end_date>28 de Outubro de 2020</end_date>
+        <supervisor link="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta_data>
+    
+    <workteam>
+        <element id="a84011">
+            <name>Catarina Freitas da Cruz</name>
+            <email>a84011@alunos.uminho.pt</email>
+            <git>https://github.com/cati-123-199</git>
+        </element>
+    </workteam>
+    
+    
+    <abstract>          
+        <p><b>XML</b> (<i>eXtensible Markup Language</i>) é uma linguagem muito parecida com HTML usada para <u>armazenar e transportar dados</u>.</p>
+        <p>Para definir a estrutura, os elementos e atributos legais de um documento XML, normalmente, é usado um ficheiro do tipo <b>DTD</b> (<i>Document Type Definition</i>).</p>
+        <p>Por último, para formatar o XML foi usado o <b>XSLT</b> que significa <i>eXtensible Stylesheet Language Transformations</i>.</p>
+        <p>Este trabalho contempla um ficheiro de cada um destes tipos apresentados anteriormente.</p>
+    </abstract>
+    
+    <deliverables>
+        <link link="https://github.com/cati-123-199/DAW2020/TPC2/project_record.dtd">Ficheiro DTD</link>
+        <link link="https://github.com/cati-123-199/DAW2020/TPC2/project_record.xml">Ficheiro XML</link>
+        <link link="https://github.com/cati-123-199/DAW2020/TPC2/project_record.xsl">Ficheiro XSL</link>
+    </deliverables>
+</project_record>

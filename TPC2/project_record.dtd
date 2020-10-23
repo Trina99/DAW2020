@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT project_record (meta_data, workteam, abstract, deliverables)>
+
+<!ELEMENT meta_data (key_name, title, subtitle?, begin_date, end_date, supervisor)>
+
+<!ELEMENT workteam (element, element?, element?)>
+<!ELEMENT element (name, email, web_page?, git?)>
+<!ATTLIST element
+    id CDATA #REQUIRED>
+
+<!ELEMENT abstract (p*)>
+<!ELEMENT p (#PCDATA|b|i|u|link|ref)*>
+
+<!ELEMENT deliverables (link*)>
+
+
+<!ELEMENT key_name (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT begin_date (#PCDATA)>
+<!ELEMENT end_date (#PCDATA)>
+<!ELEMENT supervisor (#PCDATA)>
+<!ATTLIST supervisor 
+            link CDATA #IMPLIED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT web_page (#PCDATA)>
+<!ELEMENT git (#PCDATA)>
+
+<!ELEMENT b (#PCDATA)>
+<!ELEMENT i (#PCDATA)>
+<!ELEMENT u (#PCDATA)>
+
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link
+    link CDATA #REQUIRED>
+    
+<!ELEMENT ref EMPTY>
+<!ATTLIST ref
+    ref IDREF #REQUIRED>
