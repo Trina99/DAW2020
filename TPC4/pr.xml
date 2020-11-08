@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/trina/Documents/4.1/DAW/TPCs/TPC4/pr.dtd">
+<?xml-stylesheet type="text/css" href="project_record.css"?>
+<?xml-stylesheet type="text/xsl" href="project_record.xsl"?>
+<pr>
+    <meta>
+        <key>PR_Trina_2020</key>
+        <title>TPC4 de DAW</title>
+        <bdate>4 de Novembro de 2020</bdate>
+        <edate>11 de Novembro de 2020</edate>
+        <supervisor url="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </meta>
+    
+    <team>
+        <member id="a84011">
+            <name>Catarina Freitas da Cruz</name>
+            <email>a84011@alunos.uminho.pt</email>
+            <url>https://github.com/cati-123-199</url>
+        </member>
+    </team>
+    
+    <abstract>
+        <p>Este tpc foi constituido por várias etapas. A primeira consistiu em <u>criar vários ficheiros html com nomes específicos</u> (i.e. arq1.html, arq2.html,...) a partir de um database (arq.xml). Para tal, foi usado o XSLT para transformar o ficheiro de dados XML.</p>
+        <p>De seguida, foi criado um <b>servidor localhost</b>, em nodejs, para responder a pedidos. O indice criado pede ao servidor para aceder às paginas, em vez de as ir buscar aos ficheiros do computador.</p>
+        <p>Por último foi realizado o presente <b>project record</b> com o modelo definido na aula.</p>
+    </abstract>
+    
+    <deliverables>
+        <link link="https://github.com/cati-123-199/DAW2020/blob/main/TPC4/pr.dtd">Project Record DTD</link>
+        <link link="https://github.com/cati-123-199/DAW2020/edit/main/TPC4/pr.xml">Project Record XML</link>
+        <link link="https://github.com/cati-123-199/DAW2020/blob/main/TPC4/pr.xsl">Project Record XSL</link>
+        <link link="https://github.com/cati-123-199/DAW2020/blob/main/TPC4/arq.dtd">Database arq DTD</link>
+        <link link="https://github.com/cati-123-199/DAW2020/edit/main/TPC4/arq.xml">Database arq XML</link>
+        <link link="https://github.com/cati-123-199/DAW2020/blob/main/TPC4/arq-website.xsl">Database arq XSL</link>
+        <link link="https://github.com/cati-123-199/DAW2020/blob/main/TPC4/servidor.js">Server JS</link>
+        <link link="https://github.com/cati-123-199/DAW2020/edit/main/TPC4/mymod.js">Mymod JS</link>
+        
+    </deliverables>
+</pr>
