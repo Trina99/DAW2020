@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "name": "tpc6",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "description": ""
+}
