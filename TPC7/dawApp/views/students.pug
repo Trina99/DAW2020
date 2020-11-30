@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3.w3-left Students List (DAW2020)
+      if list.length > 0
+        .w3-container 
+          table.w3-table-all
+            tr 
+              th Number
+              th Name
+              th Git
+            each s in list
+              tr
+                td
+                  a(href='http://localhost:7700/students/'+s.numero)= s.numero
+                td= s.nome
+                td
+                  a(href=s.git)= s.git
+                td
+                  a(href="/students/edit/"+s.numero)
+                    button Edit
+                td
+                  form(method="POST" action=`/student/delete/${s.numero}`)
+                    input.button(type="submit" value="Delete")
+      else
+        .w3-container
+          p There are no students...
+        
+      a(href="/students/register")
+            button Add Student
+
+      footer.w3-container.w3-teal
+        address(style="text-align:center;")
+          a(href = 'http://localhost:7700/students/') Refresh
+          |  Gerado por dawApp :: 2020-Nov
+
+  

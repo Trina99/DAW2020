@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title Edit Student (DAW2020)
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    //- link(rel="icon", href="favicon.png"/)
+  body
+    div(class="w3-container w3-teal")
+        h2 Edit Student
+
+        form(class= "w3-container", action=`/student/edit/${student.numero}`, method="POST")
+            b Number
+            input(class="w3-input w3-border w3-light-grey", type="text", name="numero", value=`${student.numero}`)
+
+            b Name
+            input(class="w3-input w3-border w3-light-grey", type="text", name="nome", value=`${student.nome}`)
+            
+            b Git
+            input(class="w3-input w3-border w3-light-grey", type="text", name="git", value=`${student.git}`)
+
+            br
+            table.w3_table-all
+                tr 
+                - var n = 0
+                while n < 8
+                    label.w3-text-white 
+                    th= `TPC ${n+1}`
+                    - ++n
+                tr 
+                - var n = 0
+                while n < 8
+                    td
+                        if student.tpc[n]
+                            input(type='checkbox', id=`tpc${n}`, name=`tpc${n}`, checked)
+                        else
+                            input(type='checkbox', id=`tpc${n}`, name=`tpc${n}`)
+                    - ++n
+            br
+            input(class="w3-btn w3-blue-grey", type="submit", value="Edit")
+
+            input(class="w3-btn w3-blue-grey", type="reset", value="Reset")
+
+        footer(class="w3-container w3-teal")
+            address Gerado por dawApp :: 2020-Nov [
+                a(href="/students") Home]

@@ -1,0 +1,31 @@
+extends form
+
+block table
+
+form(class= "w3-container", action="/student", method="POST")
+            b Number
+            input(class="w3-input w3-border w3-light-grey", type="text", name="numero")
+
+            b Name
+            input(class="w3-input w3-border w3-light-grey", type="text", name="nome")
+            
+            b Git
+            input(class="w3-input w3-border w3-light-grey", type="text", name="git")
+
+            br
+            table.w3_table-all
+                tr 
+                - var n = 0
+                while n < 8
+                    th= `TPC ${n+1}`
+                    - ++n
+                tr 
+                - var n = 0
+                while n < 8
+                    //- td= input(class="w3-input w3-border w3-light-grey", type="text")
+                    //- , name="tpc"[n])
+                    td
+                        select(class="w3-select" name="tpc"[n])
+                            option(value=0) ---
+                            option(value=1) done
+                    - ++n
