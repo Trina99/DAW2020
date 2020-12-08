@@ -63,7 +63,7 @@ function fileForm( d ){
             <link rel="icon" href="/favicon.png"/>
             <link rel="stylesheet" href="/w3.css"/>
             <script src="/jquery-3.5.1.min.js"></script>
-            <script src="/multi_upload.js"></script>
+            <script src="/imagens.js"></script>
         </head>
         <body>
             <div class="w3-container w3-teal">
@@ -90,7 +90,7 @@ function fileForm( d ){
                     </div>
                 </div>
                 <div class="w3-row w3-margin-bottom">                 
-                    <button type="button" onclick="show_upload();">More...</button></a>
+                    <button type="button" onclick="showUpload();"> +1 </button></a>
                 </div>
                 <input class="w3-btn w3-blue-grey" type="submit" value="Submit"/>
             </form>
